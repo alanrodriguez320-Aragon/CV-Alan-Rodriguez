@@ -6,7 +6,6 @@ CV Online (GitHub Pages)🌐
 - Sitio: https://alanrodriguez320-aragon.github.io/CV-Alan-Rodriguez/
 
 
-
 👤About Me
 Soy **Alan Rodríguez Sánchez**, especialista en **Inteligencia Artificial** y **Marketing Digital** con experiencia profesional multifacética de **más de 8 años** en creación de contenido audiovisual, diseño gráfico, anuncios publicitarios y traducción. Combino **creatividad, tecnología y estrategia** para impulsar marcas, optimizar procesos y desarrollar proyectos innovadores.
 
@@ -17,13 +16,11 @@ Soy **Alan Rodríguez Sánchez**, especialista en **Inteligencia Artificial** y 
 - Optimización de contenido para redes: títulos, hooks, descripciones, hashtags y CTAs.
 
 
-
 Gustos y hobbies
 - Producción y edición de video (shorts, reels, contenido educativo/entretenimiento).
 - Marketing digital y análisis de contenido (alcance, conversión, retención).
 - IA aplicada a creatividad (texto, imagen, video) y automatización.
 - Diseño gráfico y construcción de identidad visual.
-
 
 
 ⭐ Recomendaciones
