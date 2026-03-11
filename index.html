@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Alan Rodríguez Sánchez</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #7ED957; /* Verde del documento */
+            --dark-color: #2d3436;
+            --light-bg: #f9f9f9;
+            --white: #ffffff;
+            --transition: all 0.3s ease;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--light-bg);
+            color: var(--dark-color);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* Animaciones */
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .animate {
+            animation: fadeInUp 0.8s ease forwards;
+            opacity: 0;
+        }
+
+        /* Layout */
+        .container {
+            max-width: 1000px;
+            margin: 40px auto;
+            background: var(--white);
+            display: grid;
+            grid-template-columns: 350px 1fr;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            border-radius: 15px;
+            overflow: hidden;
+        }
+
+        /* Sidebar Izquierdo */
+        .sidebar {
+            background-color: var(--primary-color);
+            color: var(--white);
+            padding: 40px 30px;
+        }
+
+        .profile-img {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            border: 5px solid var(--white);
+            margin: 0 auto 20px;
+            display: block;
+            object-fit: cover;
+            transition: var(--transition);
+        }
+
+        .profile-img:hover {
+            transform: scale(1.05);
+        }
+
+        .sidebar h2 {
+            text-align: center;
+            margin-bottom: 25px;
+            text-transform: uppercase;
+            font-size: 1.4rem;
+        }
+
+        .info-section {
+            margin-bottom: 30px;
+        }
+
+        .info-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+            font-size: 0.9rem;
+        }
+
+        .info-item i {
+            margin-right: 15px;
+            width: 20px;
+        }
+
+        /* Contenido Principal */
+        .main-content {
+            padding: 50px;
+            background: var(--white);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: var(--dark-color);
+            margin-bottom: 5px;
+            text-transform: uppercase;
+        }
+
+        .subtitle {
+            color: var(--primary-color);
+            font-weight: 600;
+            margin-bottom: 30px;
+            display: block;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        h3 {
+            border-left: 5px solid var(--primary-color);
+            padding-left: 15px;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            color: var(--dark-color);
+        }
+
+        /* Habilidades */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+        }
+
+        .skill-card {
+            background: #f1f1f1;
+            padding: 15px;
+            border-radius: 8px;
+            font-size: 0.85rem;
+            transition: var(--transition);
+            border-bottom: 3px solid transparent;
+        }
+
+        .skill-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--primary-color);
+            background: #e8f5e9;
+        }
+
+        /* Educación y Experiencia */
+        .timeline-item {
+            margin-bottom: 20px;
+            position: relative;
+            padding-left: 20px;
+            border-left: 2px solid #eee;
+        }
+
+        .year {
+            font-weight: 700;
+            color: var(--primary-color);
+            font-size: 0.9rem;
+        }
+
+        .school {
+            font-weight: 600;
+            display: block;
+        }
+
+        /* Intereses Tags */
+        .tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .tag {
+            background: var(--primary-color);
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+        }
+
+        @media (max-width: 850px) {
+            .container {
+                grid-template-columns: 1fr;
+                margin: 0;
+            }
+            .sidebar {
+                text-align: center;
+            }
+            .info-item {
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <aside class="sidebar">
+        <img src="https://via.placeholder.com/180" alt="Alan Rodríguez Sánchez" class="profile-img"> <div class="animate" style="animation-delay: 0.2s;">
+            <h2>Contacto</h2>
+            <div class="info-item">
+                <i class="fas fa-phone"></i>
+                <span>5619888905</span>
+            </div>
+            <div class="info-item">
+                <i class="fas fa-calendar"></i>
+                <span>6 de Agosto, 2003</span>
+            </div>
+            <div class="info-item">
+                <i class="fas fa-globe"></i>
+                <span>Mexicano</span>
+            </div>
+        </div>
+
+        <div class="info-section animate" style="animation-delay: 0.4s;">
+            <h3>Intereses</h3>
+            <div class="tags">
+                <span class="tag">Cursos Online</span>
+                <span class="tag">Deporte</span>
+                <span class="tag">IA Generativa</span>
+                <span class="tag">Ventas</span>
+            </div>
+        </div>
+
+        <div class="info-section animate" style="animation-delay: 0.6s;">
+            <h3>Idiomas</h3>
+            <p>Inglés Básico & Avanzado (CECATI 127)</p>
+        </div>
+    </aside>
+
+    <main class="main-content">
+        <header class="animate">
+            <h1>Alan Rodríguez Sánchez</h1>
+            <span class="subtitle">Especialista en IA y Marketing Digital</span>
+            <p>Profesional con más de 8 años de experiencia en creación de contenido digital y marketing, especializada en inteligencia artificial aplicada a generación de contenido, automatización creativa y optimización de estrategias digitales.</p>
+        </header>
+
+        <section class="animate" style="animation-delay: 0.2s;">
+            <h3>Experiencia Profesional</h3>
+            <div class="timeline-item">
+                <span class="school">Extinrod</span>
+                <p>Dirección: Delegación Coyoacán, Col. Xochiapan 173</p>
+                <p><small>Jefe inmediato: Israel Morgan Rodriguez</small></p>
+            </div>
+        </section>
+
+        <section class="animate" style="animation-delay: 0.4s;">
+            <h3>Habilidades Clave</h3>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <strong>Contenido con IA</strong><br>
+                    Producción y edición de videos optimizados con herramientas generativas.
+                </div>
+                <div class="skill-card">
+                    <strong>Marketing Digital</strong><br>
+                    Estrategias SEO, SEM y analítica predictiva con IA.
+                </div>
+                <div class="skill-card">
+                    <strong>Diseño Gráfico</strong><br>
+                    Dominio de Adobe Creative Suite y diseño asistido por IA.
+                </div>
+                <div class="skill-card">
+                    <strong>Publicidad Digital</strong><br>
+                    Gestión de Google, Facebook y YouTube Ads.
+                </div>
+                <div class="skill-card">
+                    <strong>Programación</strong><br>
+                    CSS, Java, HTML aplicado a proyectos digitales.
+                </div>
+            </div>
+        </section>
+
+        <section class="animate" style="animation-delay: 0.6s;">
+            <h3>Educación</h3>
+            <div class="timeline-item">
+                <span class="year">2021 - 2025</span>
+                <span class="school">Facultad de Estudios Superiores Aragón</span>
+                <p>Estudiante actual</p>
+            </div>
+            <div class="timeline-item">
+                <span class="year">2019 - 2021</span>
+                <span class="school">Preparatoria No. 5, Plantel José Vasconcelos</span>
+                <p>Certificado obtenido</p>
+            </div>
+            <div class="timeline-item">
+                <span class="year">Cursos Extra</span>
+                <span class="school">Domestika</span>
+                <p>Diseño, Programación (CSS, Java, HTML) e IA.</p>
+            </div>
+        </section>
+    </main>
+</div>
+
+<script>
+    // Pequeña animación para revelar elementos al hacer scroll
+    const observerOptions = {
+        threshold: 0.1
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.style.opacity = "1";
+                entry.target.classList.add('animate');
+            }
+        });
+    }, observerOptions);
+
+    document.querySelectorAll('.animate').forEach(el => observer.observe(el));
+</script>
+
+</body>
+</html>
