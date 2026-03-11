@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <style>
         :root {
-            --primary-color: #7ED957; /* Verde del documento */
+            --primary-color: #7ED957;
             --dark-color: #2d3436;
             --light-bg: #f9f9f9;
             --white: #ffffff;
@@ -29,7 +29,6 @@
             overflow-x: hidden;
         }
 
-        /* Animaciones */
         @keyframes fadeInUp {
             from { opacity: 0; transform: translateY(30px); }
             to { opacity: 1; transform: translateY(0); }
@@ -40,7 +39,6 @@
             opacity: 0;
         }
 
-        /* Layout */
         .container {
             max-width: 1000px;
             margin: 40px auto;
@@ -52,7 +50,6 @@
             overflow: hidden;
         }
 
-        /* Sidebar Izquierdo */
         .sidebar {
             background-color: var(--primary-color);
             color: var(--white);
@@ -68,6 +65,7 @@
             display: block;
             object-fit: cover;
             transition: var(--transition);
+            background-color: #eee;
         }
 
         .profile-img:hover {
@@ -97,7 +95,6 @@
             width: 20px;
         }
 
-        /* Contenido Principal */
         .main-content {
             padding: 50px;
             background: var(--white);
@@ -129,7 +126,6 @@
             color: var(--dark-color);
         }
 
-        /* Habilidades */
         .skills-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -151,7 +147,6 @@
             background: #e8f5e9;
         }
 
-        /* Educación y Experiencia */
         .timeline-item {
             margin-bottom: 20px;
             position: relative;
@@ -170,7 +165,6 @@
             display: block;
         }
 
-        /* Intereses Tags */
         .tags {
             display: flex;
             flex-wrap: wrap;
@@ -203,7 +197,9 @@
 
 <div class="container">
     <aside class="sidebar">
-        <img src="https://via.placeholder.com/180" alt="Alan Rodríguez Sánchez" class="profile-img"> <div class="animate" style="animation-delay: 0.2s;">
+        <img src="perfil.jpg" alt="Alan Rodríguez Sánchez" class="profile-img"> 
+        
+        <div class="animate" style="animation-delay: 0.2s;">
             <h2>Contacto</h2>
             <div class="info-item">
                 <i class="fas fa-phone"></i>
@@ -299,7 +295,6 @@
 </div>
 
 <script>
-    // Pequeña animación para revelar elementos al hacer scroll
     const observerOptions = {
         threshold: 0.1
     };
